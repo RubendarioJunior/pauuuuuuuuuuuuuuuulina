@@ -1,0 +1,113 @@
+/* ---- reset ---- */
+body {
+  margin: 0;
+  font: normal 75% Arial, Helvetica, sans-serif;
+}
+canvas {
+  display: block;
+  vertical-align: bottom;
+} /* ---- particles.js container ---- */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+#particles-js {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: #b61924;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: 1;
+} /* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13e8e9;
+  font-size: 0.8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+.js-count-particles {
+  font-size: 1.1em;
+}
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+.count-particles {
+  border-radius: 0 0 3px 3px;
+}
+.carta {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 340px;
+  min-height: 220px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25), 0 1.5px 8px rgba(182,25,36,0.15);
+  padding: 32px 24px;
+  text-align: center;
+  z-index: 10;
+  opacity: 0.97;
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+.carta h2 {
+  margin-top: 0;
+  color: #b61924;
+  font-family: 'Pacifico', serif;
+}
+.firma {
+  margin-top: 2em;
+  font-family: 'Pacifico', cursive;
+  color: #b61924;
+  font-size: 1.2em;
+}
+.nombre-especial {
+  color: #2196f3;
+  font-family: 'Pacifico', cursive;
+  font-size: 1.1em;
+  letter-spacing: 1px;
+}
+@media (max-width: 480px) {
+  .carta {
+    width: 95vw;
+    max-width: 98vw;
+    min-width: unset;
+    padding: 18px 6vw;
+    font-size: 1em;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    padding: 0;
+  }
+  .carta h2 {
+    font-size: 1.3em;
+  }
+  .carta p {
+    font-size: 1em;
+  }
+}
